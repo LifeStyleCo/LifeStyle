@@ -3,7 +3,7 @@
 
     <item
         android:orderInCategory="1"
-        android:title="@string/profile"
+        android:title="Профиль"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
     <item
@@ -19,7 +19,7 @@
     <item
         android:orderInCategory="4"
         android:title="@string/camping"
-        android:icon="@mipmap/ic_mode_edit_black_24dp" />
+        android:icon="@mipmap/ic_fish" />
 
     <item
         android:orderInCategory="5"
