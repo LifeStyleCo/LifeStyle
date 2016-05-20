@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import lifestyle_alfresco.lifestyle_alfresco.adapter.TabsPagerFragmentAdapter;
+import lifestyle_alfresco.lifestyle_alfresco.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void initTabs() {
         viewpager = (ViewPager)findViewById(R.id.ViewPager);
-        TabsPagerFragmentAdapter adapter = new TabsPagerFragmentAdapter(getSupportFragmentManager());
+        TabsFragmentAdapter adapter = new TabsFragmentAdapter(this, getSupportFragmentManager());
         viewpager.setAdapter(adapter);
         TabLayout tablayout = (TabLayout)findViewById(R.id.tablayout);
         assert tablayout != null;
