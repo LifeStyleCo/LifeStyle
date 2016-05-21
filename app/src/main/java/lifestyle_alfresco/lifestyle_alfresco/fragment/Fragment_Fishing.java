@@ -29,17 +29,13 @@ public class Fragment_Fishing extends AbstractTabFragment {
 
         return fragment;
     }
-
     @Nullable
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         view = inflater.inflate(LAYOUT, container, false);
-
         RecyclerView rv = (RecyclerView)  view.findViewById(R.id.recyclerView);
         rv.setLayoutManager(new LinearLayoutManager(context));
         rv.setAdapter(new PostListAdapter(CreateMockPostListData()));
-
-
         return view;
     }
 

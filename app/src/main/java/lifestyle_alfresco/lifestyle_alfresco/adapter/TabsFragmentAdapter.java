@@ -25,7 +25,7 @@ public class TabsFragmentAdapter extends FragmentPagerAdapter {
     /** private List<RemindDTO> data;
     private HistoryFragment historyFragment;*/
 
-    /** Вот этот Адаптер хз вообще к чему, но через него всё работает  */
+    /** Вот этот Адаптер хз вообще к чему, но через него всё не работает  */
     public TabsFragmentAdapter(Context context, FragmentManager fm) {
         super(fm);
         this.context = context;
