@@ -2,27 +2,27 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:orderInCategory="1"
+        android:id="@+id/nav_profile"
         android:title="Профиль"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
     <item
-        android:orderInCategory="2"
+        android:id="@+id/nav_hunting"
         android:title="@string/hunting"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
     <item
-        android:orderInCategory="3"
+        android:id="@+id/nav_fishing"
         android:title="@string/fishing"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
     <item
-        android:orderInCategory="4"
+        android:id="@+id/nav_cemping"
         android:title="@string/camping"
         android:icon="@mipmap/ic_fish" />
 
     <item
-        android:orderInCategory="5"
+        android:id="@+id/nav_settings"
         android:title="@string/action_settings"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
