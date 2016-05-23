@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(LAYOUT);
-        
+
         initToolbar ();
         initTabs ();
         initNavigationView ();
@@ -90,19 +90,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /** public boolean onNavigationItemSelected(MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == R.id.nav_fishing) {
-        } else if (id == R.id.nav_hunting) {
-
-        } else if (id == R.id.nav_cemping) {
-
-        } else if (id == R.id.nav_settings) {
-
-        }
-
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
-    }*/
+     int id = item.getItemId();
+     if (id == R.id.nav_fishing) {
+     } else if (id == R.id.nav_hunting) {
+     } else if (id == R.id.nav_cemping) {
+     } else if (id == R.id.nav_settings) {
+     }
+     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+     drawer.closeDrawer(GravityCompat.START);
+     return true;
+     }*/
 }

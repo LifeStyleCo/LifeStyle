@@ -165,8 +165,7 @@
                 android:id="@+id/Spinner_Gender"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="@android:color/white"
-                android:entries="@array/genders"/>
+                android:textColor="@android:color/white" />
 
         </LinearLayout>
     </ScrollView>
