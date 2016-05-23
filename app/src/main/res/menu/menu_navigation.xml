@@ -26,4 +26,9 @@
         android:title="@string/action_settings"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
+    <item
+        android:orderInCategory="5"
+        android:title="@string/action_adout"
+        android:icon="@mipmap/ic_mode_edit_black_24dp" />
+
 </menu>
