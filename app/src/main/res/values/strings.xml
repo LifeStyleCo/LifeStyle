@@ -3,7 +3,7 @@
     <string name="action_settings">Настройки</string>
     <string name="action_filter">Фильтр</string>
     <string name="search_title">Поиск</string>
-    <string name="profile">Профль</string>
+    <string name="profile">Профиль</string>
     <string name="fishing">Рыбалка</string>
     <string name="hunting">Охота</string>
     <string name="camping">Кемпинг</string>
@@ -32,6 +32,9 @@
     <string name="settings_pwd_not_set">No Password Set</string>
     <string name="settings_pwd_not_equal">Passwords do not match, please try again.</string>
     <string name="settings_pwd_equal">Passwords match.</string>
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
+
 
     <!-- Example General settings -->
     <string name="pref_header_general">General</string>

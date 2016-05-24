@@ -3,7 +3,7 @@
 
     <item
         android:id="@+id/nav_profile"
-        android:title="Профиль"
+        android:title="@string/profile"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
     <item
@@ -27,6 +27,7 @@
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
 
     <item
+        android:id="@+id/nav_about"
         android:orderInCategory="5"
         android:title="@string/action_adout"
         android:icon="@mipmap/ic_mode_edit_black_24dp" />
