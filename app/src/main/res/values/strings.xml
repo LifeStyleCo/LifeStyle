@@ -91,5 +91,7 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="name">Борис</string>
+    <string name="mail">lifestyle@gmail.com</string>
 
 </resources>

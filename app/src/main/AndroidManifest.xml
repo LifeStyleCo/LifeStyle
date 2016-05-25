@@ -21,7 +21,7 @@
         <activity
             android:name=".AboutActivity"
             android:label="@string/about_title"
-            android:theme="@style/AppTheme"></activity>
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -30,6 +30,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="lifestyle_alfresco.lifestyle_alfresco.MainActivity" />
         </activity>
+        <activity android:name=".ProfileActivity"/>
     </application>
 
 </manifest>
