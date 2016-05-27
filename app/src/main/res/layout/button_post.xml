@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:id="@+id/buttunbarlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    >
+    android:gravity="top|left"
+    android:background="#00ffffff"
+    android:backgroundTint="#00ffffff"
+    android:backgroundTintMode="screen">
 
     <ImageButton
-        style="?android:attr/action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:src="@mipmap/ic_mode_edit_black_24dp"
-        android:background="#ffffff"
-        />
+        android:id="@+id/imageButton"
+        android:src="@drawable/ic_thumb_up"
+        android:background="#4055e0"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material"
+        android:focusable="false" />
 
     <ImageButton
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button2" />
+        android:id="@+id/imageButton2"
+        android:src="@drawable/ic_thumb_down"
+        android:background="#FF4055E0"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/abc_action_bar_overflow_padding_end_material" />
 
     <ImageButton
-        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/button3" />
-
-    <ImageButton
-        style="?android:attr/buttonStyleSmall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button4" />
+        android:id="@+id/imageButton3"
+        android:src="@drawable/ic_google_maps"
+        android:background="#FF4055E0"
+        android:layout_gravity="top|right"
+        android:layout_marginTop="@dimen/abc_action_bar_overflow_padding_end_material" />
 
 </LinearLayout>

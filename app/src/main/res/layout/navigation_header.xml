@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="160dp"
     android:background="@drawable/side_nav_bar"
@@ -9,21 +11,32 @@
     android:paddingLeft="16dp"
     android:paddingRight="16dp"
     android:paddingTop="16dp"
-    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1">
+
+   <!-- <lifestyle_alfresco.lifestyle_alfresco.borrowing.CircleImageView
+
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/avatarka"
+        app:civ_border_width="2dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:layout_gravity="top|left" />-->
 
     <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
         android:id="@+id/imageView"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:paddingTop="16dp"
-        android:src="@drawable/avatarka" />
+        android:src="@drawable/avatarka"
+        android:nestedScrollingEnabled="false" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
         android:text="lifestyle"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:layout_gravity="center_horizontal" />
 
     <TextView
         android:id="@+id/textView"
