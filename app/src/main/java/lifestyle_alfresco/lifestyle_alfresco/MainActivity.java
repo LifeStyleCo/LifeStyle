@@ -1,5 +1,6 @@
 package lifestyle_alfresco.lifestyle_alfresco;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,10 +10,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.ButtonBarLayout;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
 
 import lifestyle_alfresco.lifestyle_alfresco.adapter.TabsFragmentAdapter;
 
@@ -22,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private DrawerLayout drawerlayout;
     private ViewPager viewpager;
+    private ButtonBarLayout buttonBarLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
         initToolbar ();
         initTabs ();
         initNavigationView ();
+        initButtonBarLayout();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
@@ -45,16 +50,27 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void initToolbar() {
-        toolbar = (Toolbar) findViewById(R.id.toolbar);
+    @SuppressLint("WrongViewCast")
+    private void initButtonBarLayout(){
+        buttonBarLayout = (ButtonBarLayout) findViewById(R.id.buttunbarlayout);
         toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override  //Хуйня ниже нихуя не работает
             public boolean onMenuItemClick(MenuItem menuItem) {
                 return true;
             }
         });
+    }
+    private void initToolbar() {
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+                @Override  //Хуйня ниже нихуя не работает
+                public boolean onMenuItemClick(MenuItem menuItem) {
+                    return true;
+                }
+        });
         setSupportActionBar(toolbar);
         toolbar.inflateMenu(R.menu.menu_main);
+
     }
 
     private void initNavigationView() {
