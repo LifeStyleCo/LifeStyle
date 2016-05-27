@@ -11,11 +11,11 @@
     android:paddingTop="16dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
+    <lifestyle_alfresco.lifestyle_alfresco.borrowing.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:paddingTop="16dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:paddingTop="0dp"
         android:src="@drawable/avatarka" />
 
     <TextView
