@@ -14,7 +14,7 @@
     <item
         android:id="@+id/nav_fishing"
         android:title="@string/fishing"
-        android:icon="@mipmap/ic_mode_edit_black_24dp" />
+        android:icon="@mipmap/ic_fish" />
 
     <item
         android:id="@+id/nav_cemping"

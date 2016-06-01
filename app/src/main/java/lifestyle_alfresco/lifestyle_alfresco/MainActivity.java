@@ -16,14 +16,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-
 import lifestyle_alfresco.lifestyle_alfresco.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
     private static final int LAYOUT = R.layout.activity_main;
     private Toolbar toolbar;
-    private DrawerLayout drawerlayout;
     private ViewPager viewpager;
     private ButtonBarLayout buttonBarLayout;
 
@@ -36,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         initTabs ();
         initNavigationView ();
         initButtonBarLayout();
-
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {

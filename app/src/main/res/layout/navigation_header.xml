@@ -15,9 +15,8 @@
 
     <lifestyle_alfresco.lifestyle_alfresco.borrowing.CircleImageView
         android:id="@+id/imageView"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:paddingTop="16dp"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
         android:src="@drawable/avatarka" />
 
     <TextView
