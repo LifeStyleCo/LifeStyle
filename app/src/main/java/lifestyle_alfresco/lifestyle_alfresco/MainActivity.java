@@ -1,6 +1,5 @@
 package lifestyle_alfresco.lifestyle_alfresco;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -20,10 +19,10 @@ import lifestyle_alfresco.lifestyle_alfresco.adapter.TabsFragmentAdapter;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int LAYOUT = R.layout.activity_main;
+    private static final int LAYOUT = R.layout.activity_main;  //Менять основной лейаут
     private Toolbar toolbar;
     private ViewPager viewpager;
-    private ButtonBarLayout buttonBarLayout;
+    private ButtonBarLayout buttonBarLayout;  //хз, что она не используется
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         initToolbar ();
         initTabs ();
         initNavigationView ();
-        initButtonBarLayout();
+        //initButtonBarLayout();
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         assert fab != null;
         fab.setOnClickListener(new View.OnClickListener() {
@@ -47,24 +46,19 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @SuppressLint("WrongViewCast")
-    private void initButtonBarLayout(){
-        buttonBarLayout = (ButtonBarLayout) findViewById(R.id.buttunbarlayout);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-            @Override  //Хуйня ниже нихуя не работает
-            public boolean onMenuItemClick(MenuItem menuItem) {
-                return true;
-            }
-        });
-    }
+    //@SuppressLint("WrongViewCast")              //Всё работает и без этого...
+    //private void initButtonBarLayout(){
+    //    buttonBarLayout = (ButtonBarLayout) findViewById(R.id.buttunbarlayout);
+    //    toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
+     //       @Override  //Хуйня ниже нихуя не работает
+    //        public boolean onMenuItemClick(MenuItem menuItem) {
+    //            return true;
+    //        }
+    //    });
+    //}
+
     private void initToolbar() {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
-                @Override  //Хуйня ниже нихуя не работает
-                public boolean onMenuItemClick(MenuItem menuItem) {
-                    return true;
-                }
-        });
         setSupportActionBar(toolbar);
         toolbar.inflateMenu(R.menu.menu_main);
 
@@ -101,28 +95,15 @@ public class MainActivity extends AppCompatActivity {
                         Intent intent_settings = new Intent(MainActivity.this, SettingsActivity.class);
                         startActivity(intent_settings);
                         break;
-                    case R.id.nav_about:
-                        Intent intent_about = new Intent(MainActivity.this, AboutActivity.class);
-                        startActivity(intent_about);
-                        break;
+                    //case R.id.nav_about:
+                    //    Intent intent_about = new Intent(MainActivity.this, AboutActivity.class);
+                    //    startActivity(intent_about);
+                    //    break;
                 }
                 return true;
             }
         });
     }
-
-    private void showNotificationTab(int tabOne) {
-        viewpager.setCurrentItem(Constants.TAB_ONE);
-    }
-
-    private void showNotificationTab2(int tabTwo) {
-        viewpager.setCurrentItem(Constants.TAB_TWO);
-    }
-
-    private void showNotificationTab3(int tabThree) {
-        viewpager.setCurrentItem(Constants.TAB_THREE);
-    }
-
 
     private void initTabs() {
         viewpager = (ViewPager)findViewById(R.id.ViewPager);
@@ -132,6 +113,7 @@ public class MainActivity extends AppCompatActivity {
         assert tablayout != null;
         tablayout.setupWithViewPager(viewpager);
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -158,15 +140,28 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-    /** public boolean onNavigationItemSelected(MenuItem item) {
-     int id = item.getItemId();
-     if (id == R.id.nav_fishing) {
-     } else if (id == R.id.nav_hunting) {
-     } else if (id == R.id.nav_cemping) {
-     } else if (id == R.id.nav_settings) {
-     }
-     DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-     drawer.closeDrawer(GravityCompat.START);
-     return true;
-     }*/
+
+    private void showNotificationTab(int tabOne) {
+        viewpager.setCurrentItem(Constants.TAB_ONE);
+    }
+
+    private void showNotificationTab2(int tabTwo) {
+        viewpager.setCurrentItem(Constants.TAB_TWO);
+    }
+
+    private void showNotificationTab3(int tabThree) {
+        viewpager.setCurrentItem(Constants.TAB_THREE);
+    }
 }
+
+/** public boolean onNavigationItemSelected(MenuItem item) {
+ int id = item.getItemId();
+ if (id == R.id.nav_fishing) {
+ } else if (id == R.id.nav_hunting) {
+ } else if (id == R.id.nav_cemping) {
+ } else if (id == R.id.nav_settings) {
+ }
+ DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+ drawer.closeDrawer(GravityCompat.START);
+ return true;
+ }*/

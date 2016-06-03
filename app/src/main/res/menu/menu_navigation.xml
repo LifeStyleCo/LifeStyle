@@ -4,12 +4,7 @@
     <item
         android:id="@+id/nav_profile"
         android:title="@string/profile"
-        android:icon="@mipmap/ic_mode_edit_black_24dp" />
-
-    <item
-        android:id="@+id/nav_hunting"
-        android:title="@string/hunting"
-        android:icon="@mipmap/ic_mode_edit_black_24dp" />
+        android:icon="@drawable/ic_person_black_24dp" />
 
     <item
         android:id="@+id/nav_fishing"
@@ -17,19 +12,25 @@
         android:icon="@mipmap/ic_fish" />
 
     <item
+        android:id="@+id/nav_hunting"
+        android:title="@string/hunting"
+        />
+
+
+    <item
         android:id="@+id/nav_cemping"
         android:title="@string/camping"
-        android:icon="@mipmap/ic_fish" />
+        android:icon="@drawable/ic_terrain_black_24dp" />
 
     <item
         android:id="@+id/nav_settings"
         android:title="@string/action_settings"
-        android:icon="@mipmap/ic_mode_edit_black_24dp" />
+        android:icon="@drawable/ic_settings_black_24dp" />
 
-    <item
+    <!--<item
         android:id="@+id/nav_about"
         android:orderInCategory="5"
         android:title="@string/action_adout"
-        android:icon="@mipmap/ic_mode_edit_black_24dp" />
+        android:icon="@mipmap/ic_mode_edit_black_24dp" /> -->
 
 </menu>
