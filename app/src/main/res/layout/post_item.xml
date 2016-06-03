@@ -18,7 +18,8 @@
         card:cardUseCompatPadding="true"
         style="@style/Base.CardView"
         android:longClickable="false"
-        android:clickable="true">
+        android:clickable="true"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius">
 
         <lifestyle_alfresco.lifestyle_alfresco.borrowing.CircleImageView
             android:id="@+id/imageView"
@@ -26,6 +27,19 @@
             android:layout_height="56dp"
             android:paddingTop="0dp"
             android:src="@drawable/avatarka" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imageView_basic"
+                android:src="@drawable/avatarka"
+                android:scaleType="centerCrop" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -42,24 +56,27 @@
                 android:textColor="@color/colorBlack"
                 android:paddingBottom="5dp"/>
 
-            <ImageView
-                android:layout_width="fill_parent"
-                android:layout_height="250dp"
-                android:id="@+id/imageView_basic"
-                android:src="@drawable/avatarka" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+
+                <!-- Вот тут нашел, мин, макс лайнс, потом надо будет прописывать програмно -->
                 <TextView
                     android:id="@+id/TextView_Post_text"
                     android:layout_width="wrap_content"
-                    android:layout_height="40dp"
+                    android:layout_height="wrap_content"
                     android:text="@string/test"
-                    android:textSize="8pt" />
+                    android:textSize="8pt"
+                    android:minLines = "1"
+                    android:maxLines = "3"
+                    android:singleLine = "false"
+                    android:textIsSelectable="true"/>
 
             </LinearLayout>
+
+            </LinearLayout>
+
 
             <RelativeLayout
                 android:layout_width="match_parent"

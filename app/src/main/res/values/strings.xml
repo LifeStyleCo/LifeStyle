@@ -17,6 +17,9 @@
     <string name="about_title">О программе</string>
     <string name="action_adout">О нас</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="motrskin333Vk">Vk разработчика: vk.com/varavan</string>
+
+
 
     <!-- Strings related to Settings -->
     <string name="settings_nickname">Username:</string>
