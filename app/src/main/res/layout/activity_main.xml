@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="false"
-    tools:openDrawer="start">
+    tools:openDrawer="start/">
     <!-- The main content view -->
 
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -33,15 +33,11 @@
                 android:id="@+id/tablayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:tabIndicatorColor="@android:color/black"
-                app:tabIndicatorHeight="6dp"
-                app:tabTextColor="@android:color/black"/>
+                app:tabIndicatorColor="@android:color/white"
+                app:tabIndicatorHeight="3dp"
+                app:tabTextColor="@android:color/white"/>
 
         </android.support.design.widget.AppBarLayout>
-
-
-
-
 
     <include layout="@layout/content_main" />
 

@@ -3,7 +3,7 @@
     android:id="@+id/buttunbarlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="top|left"
+    android:gravity="start"
     android:background="#00ffffff"
     android:backgroundTint="#00ffffff"
     android:backgroundTintMode="screen">
