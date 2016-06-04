@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="12dp"
+    android:layout_marginRight="12dp">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView"
+        card:cardElevation="2dp"
+        card:cardUseCompatPadding="true"
+        style="@style/Base.CardView"
+        android:longClickable="false"
+        android:clickable="true"
+        card_view:cardCornerRadius="@dimen/cardCornerRadius">
+
+        <lifestyle_alfresco.lifestyle_alfresco.borrowing.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:paddingTop="0dp"
+            android:src="@drawable/avatarka" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:id="@+id/imageView_basic"
+                android:src="@drawable/avatarka"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"
+                android:id="@+id/title"
+                android:textSize="8pt"
+                android:textColor="@color/colorBlack"
+                android:paddingBottom="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <!-- Вот тут нашел, мин, макс лайнс, потом надо будет прописывать програмно -->
+                <TextView
+                    android:id="@+id/TextView_Post_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test"
+                    android:textSize="8pt"
+                    android:minLines = "1"
+                    android:maxLines = "3"
+                    android:singleLine = "false"
+                    android:textIsSelectable="true"/>
+
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+
+            <include layout="@layout/button_post"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+
+        </LinearLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
