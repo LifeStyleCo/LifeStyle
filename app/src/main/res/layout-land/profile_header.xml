@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/side_nav_bar"
+    android:orientation="horizontal"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1"
+    android:gravity="center">
+
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:paddingTop="4dp"
+        android:layout_marginEnd="-30dp"
+        android:text="Опыт \n284"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:clickable="false"
+        android:textIsSelectable="false"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:layout_gravity="center_vertical" />
+
+    <lifestyle_alfresco.lifestyle_alfresco.borrowing.CircleImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_weight="0.20"
+        android:layout_marginEnd="-30dp"
+        android:src="@drawable/avatarka"
+        app:civ_border_width="0dp"
+        app:civ_border_color="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"/>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:layout_weight="0.25"
+    android:layout_marginStart="-30dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="8dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:weightSum="1"
+    android:gravity="center">
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:text="@string/name"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:clickable="false"
+        android:textIsSelectable="false"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mail"
+        android:gravity="center" />
+
+
+</LinearLayout>
+    <!-- Тут библиотеку использую, которая текст автоматом сжимает https://github.com/grantland/android-autofittextview-->
+    <me.grantland.widget.AutofitTextView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:layout_marginStart="-30dp"
+        android:paddingTop="4dp"
+        android:text="Энергия \n500"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:clickable="false"
+        android:textIsSelectable="false"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="normal"
+        android:maxLines="2"
+        android:layout_gravity="center_vertical" />
+
+</LinearLayout>
